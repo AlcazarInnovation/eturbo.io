@@ -26,6 +26,29 @@ p {
   max-width: 68ch;
 }
 
+.introduction {
+  position: relative;
+}
+
+.introduction img {
+  width: 100%;
+  height: 100%;
+}
+
+.introduction h1 {
+  position: absolute; 
+  top: 100px;
+  left: 20px;
+  width: 100%; 
+}
+
+.introduction p { 
+  position: absolute; 
+  top: 150px;
+  left: 20px;
+  width: 100%; 
+}
+
 .promo-video {
   background: #ccc;
   border: 1px solid #333;
@@ -43,6 +66,26 @@ p {
   margin: 2rem auto;
   max-width: 48rem;
   width: 100%;
+}
+
+ul, li {
+  list-style: none
+}
+
+.faq-collapsible li > input + * {
+  display: none;
+}
+ 
+.faq-collapsible li > input:checked + * {
+  display: block;
+}
+
+.faq-collapsible li > input {
+  display: none;
+}
+
+.faq-collapsible label {
+  cursor: pointer;
 }
 
 footer {
