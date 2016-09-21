@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/eturbo.css">
   </head>
-  <body id="home">
+
+  <body>
     <header>
       <h1><a href="#home">E-Turbo</a></h1>
       <nav>
         <a href="#faq">FAQ</a>
       </nav>
     </header>
-    <div class="promo-video"></div>
-    <div class="introduction">
+
+    <div class="promo-video">
+      <video autoplay loop>
+        <source src="assets/videos/jet.mp4" type="video/mp4" />
+        <source src="assets/videos/jet.webm" type="video/webm" />
+      </video>
+    </div>
+
+    <section id="home" class="page" data-default="true">
       <h1>Welcome!</h1>
       <p>We are E-Turbo and we are ready to prove to everyone that <em>real</em> electric superchargers can be used to produce real power. Two years ago, we had a simple idea which was, "If we can currently power electric cars, then why can't we power turbos using electricity?" This idea evolved and transformed into what we now call E-Turbo. <a href="#faq">Check out our FAQ for more information!</a></p>
-    </div>
-    <div class="FAQ Page">
+    </section>
+
+    <section id="faq" class="page">
+      <h1>FAQ</h1>
       <ul class="faq-collapsible">
         <li>
           <label for="faq1">
@@ -85,11 +95,16 @@
         </li>
       </ul>
       <h2>More to come!</h2>
-    </div>
+    </section>
+
     <button class="cta-button" type="button">Get Involved</button>
     <button class="cta-button" type="button">Our Kickstarter</button>
+
     <footer>
       <small>© Alcazar Innovation</small>
     </footer>
+
+    <script src="scripts/eturbo.js"></script>
+
   </body>
 </html>

@@ -31,6 +31,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 p {
@@ -57,16 +58,13 @@ nav {
 }
 
 .promo-video {
-  background: #ccc;
-  border: 1px solid #333;
-  margin: 1rem 0;
-  min-height: 50vh;
-  text-align: center;
+  margin-top: -11px;
+  overflow-x: hidden;
 }
 
-/* This hides the video until it's available */
-.promo-video:empty {
-  display: none;
+.promo-video video {
+  height: 50vh;
+  transform: translateX(-25%);
 }
 
 .cta-button {
@@ -144,8 +142,14 @@ footer {
   margin: 0 auto 2rem;
 }
 
-.introduction {
-  background-image: url(http://placehold.it/1080x440);
-  background-repeat: no-repeat;
-  background-size: cover;
+/* PAGES NOT TO SHOW ELEMENTS */
+/* TODO Make this animatable */
+.page:not(:target):not([data-default=true]) {
+  display: none;
+  opacity: 0;
+}
+
+.page {
+  opacity: 1;
+  transition: opacity 250ms linear;
 }
