@@ -134,8 +134,9 @@ li {
 
 .faq-collapsible label {
   cursor: pointer;
+  display: block;
   font-weight: bold;
-  margin: 5em 0;
+  margin: 1.8rem 0 1.4rem;
 }
 
 footer {
@@ -152,4 +153,8 @@ footer {
 .page {
   opacity: 1;
   transition: opacity 250ms linear;
+}
+
+section > h1 {
+  margin: 1.8rem 0 1.4rem;
 }
