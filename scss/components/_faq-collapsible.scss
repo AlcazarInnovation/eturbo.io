@@ -1,0 +1,20 @@
+.faq-collapsible {
+  li > input {
+    display: none;
+
+    + * {
+      display: none;
+    }
+
+    &:checked + * {
+      display: block;
+    }
+  }
+
+  label {
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin: 1.8rem 0 1.4rem;
+  }
+}

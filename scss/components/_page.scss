@@ -1,0 +1,9 @@
+.page {
+  opacity: 1;
+  transition: opacity 250ms linear;
+
+  &:not(:target):not([data-default=true]) {
+    display: none;
+    opacity: 0;
+  }
+}

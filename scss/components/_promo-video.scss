@@ -1,0 +1,9 @@
+.promo-video {
+  margin-top: -11px;
+  overflow-x: hidden;
+
+  video {
+    height: 50vh;
+    transform: translateX(-25%);
+  }
+}

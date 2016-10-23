@@ -1,0 +1,24 @@
+{
+  "name": "eturbo.io",
+  "version": "1.0.0",
+  "description": "Eturbo marketing website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlcazarInnovation/eturbo.io.git"
+  },
+  "author": "Alcazar Innovation",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlcazarInnovation/eturbo.io/issues"
+  },
+  "homepage": "https://github.com/AlcazarInnovation/eturbo.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1"
+  }
+}
