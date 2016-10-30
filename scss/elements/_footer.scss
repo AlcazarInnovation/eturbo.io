@@ -1,3 +1,7 @@
 footer {
   margin: 0 auto 2rem;
+  max-width: $maximum-content-width;
+  position:relative;
+  // This is a magic number that happens to look good with video
+  top: 5vw;
 }

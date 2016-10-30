@@ -9,96 +9,102 @@
 
   <body>
     <header>
-      <h1><a href="#home">E-Turbo</a></h1>
-      <nav>
-        <a href="#faq">FAQ</a>
-      </nav>
+      <div class="header-content">
+        <h1><a href="#home">E-Turbo</a></h1>
+        <nav>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
     </header>
 
-    <div class="promo-video">
-      <video autoplay loop>
-        <source src="assets/videos/jet.mp4" type="video/mp4" />
-        <source src="assets/videos/jet.webm" type="video/webm" />
-      </video>
+    <div class="content-wrapper">
+
+      <div class="promo-video">
+        <video autoplay loop>
+          <source src="assets/videos/jet.mp4" type="video/mp4" />
+          <source src="assets/videos/jet.webm" type="video/webm" />
+        </video>
+      </div>
+
+      <section id="home" class="page" data-default="true">
+        <h1>Welcome!</h1>
+        <p>We are E-Turbo and we are ready to prove to everyone that <em>real</em> electric superchargers can be used to produce real power. Two years ago, we had a simple idea which was, "If we can currently power electric cars, then why can't we power turbos using electricity?" This idea evolved and transformed into what we now call E-Turbo. <a href="#faq">Check out our FAQ for more information!</a></p>
+      </section>
+
+      <section id="faq" class="page">
+        <h1>FAQ</h1>
+        <ul class="faq-collapsible">
+          <li>
+            <label for="faq1">
+              What is an E-turbo?
+            </label>
+            <input type="checkbox" id="faq1" />
+            <ul>
+              <li>An E-turbo is essentially a turbocharger that's powered by a high powered 16HP (48V 250A continous) high RPM (75,000) electric motor instead of using the exhaust gases.</li>
+            </ul>
+          </li>
+          <li>
+            <label for="faq2">
+              So where does an E-turbo get 48 volts from? Why not use 12 volts?
+            </label>
+            <input type="checkbox" id="faq2" />
+            <ul>
+              <li>We hear these questions a lot but there is a reason for why we're using this much power. In short, power has to come from somewhere. You simply can't connect a 12 volt battery to a motor with a compressor wheel and expect it to move/compress a significant amount of air. For this to work on a 12 volt system it would require an electric motor that pulls 1,000A so it can equal out to 12,000 Watts or 16HP. We need that 16HP to compress the air and spin a large 88mm compressor wheel at 75,000 RPM. The E-turbo is powered by a separate 48V lithium Ion cell or it can be powered by 4 lawn grade Lead Acid batteries.</li>
+            </ul>
+          </li>
+          <li>
+            <label for="faq3">
+              Wouldn't a 48V Lithium Ion battery be heavy?
+            </label>
+            <input type="checkbox" id="faq3" />
+            <ul>
+              <li>Depends... Do you think 15lbs is heavy for a 48V Lithium Ion Battery pack?</li>
+            </ul>
+          </li>
+          <li>
+            <label for="faq4">
+              How is this better than a conventional turbo or supercharger?
+            </label>
+            <input type="checkbox" id="faq4" />
+            <ul>
+              <li>The right answer for this is "It will make a different kind of power". Because the E-turbo is powered by an electric motor, it will naturally have near instant torque. With near instant torque we have an incredibly fast sub-second full speed acceleration. What does this mean? The electric turbo will hit full speed when activated and provide instant pressure and airflow. This instant burst of pressure and airflow can be triggered in the low RPM range where a conventional turbo would still be "spooling up".</li>
+            </ul>
+          </li>
+          <li>
+            <label for="faq5">
+              Can it produce more airflow/pressure than a conventional turbo?
+            </label>
+            <input type="checkbox" id="faq5" />
+            <ul>
+              <li>We would be lying if we said it could! Conventional exhaust driven turbos are powered by the engine where an electric supercharger is powered by batteries. An engine has a whole lot more power than batteries and thus an engine can create more power to spin a wheel faster and compress more air. The benefit with having an electric supercharger is that full power will always be available at 0 RPM where as a conventional turbo will hit full power at much higher RPMS.</li>
+            </ul>
+          </li>
+          <li>
+            <label for="faq6">
+              If it can't outflow a turbo then why do I want one?
+            </label>
+            <input type="checkbox" id="faq6" />
+            <ul>
+              <li>Having power available to you at 0 RPM has tremendous benefits. While an electric supercharger wont be able to outflow a conventional turbo, It will have a nice kick early on in the RPM range which will result in a lot of power in the low RPM band, Addition power in the Mid band and decent power in the High band. As we mentioned before, It's a different kind of power that is more similar to nitrous than it would be to a conventional Turbo.</li>
+            </ul>
+          </li>
+          <li>
+            <label for="faq7">
+              Nitrous? You mean this will not run all of the time?
+            </label>
+            <input type="checkbox" id="faq7" />
+            <ul>
+              <li>Correct! While you could tune up your E-Turbo so it can run all of the time, we don't suggest it. We are going at this from a Power-on-demand perspective instead of power-all-the-time. What this means is that you will have a throttle trigger point which will then activate the turbo. The trigger point and the power output of the turbo will be completely customizable by you!</li>
+            </ul>
+          </li>
+        </ul>
+        <h2>More to come!</h2>
+      </section>
+
+      <button class="cta-button" type="button">Get Involved</button>
+      <button class="cta-button" type="button">Our Kickstarter</button>
+
     </div>
-
-    <section id="home" class="page" data-default="true">
-      <h1>Welcome!</h1>
-      <p>We are E-Turbo and we are ready to prove to everyone that <em>real</em> electric superchargers can be used to produce real power. Two years ago, we had a simple idea which was, "If we can currently power electric cars, then why can't we power turbos using electricity?" This idea evolved and transformed into what we now call E-Turbo. <a href="#faq">Check out our FAQ for more information!</a></p>
-    </section>
-
-    <section id="faq" class="page">
-      <h1>FAQ</h1>
-      <ul class="faq-collapsible">
-        <li>
-          <label for="faq1">
-            What is an E-turbo?
-          </label>
-          <input type="checkbox" id="faq1" />
-          <ul>
-            <li>An E-turbo is essentially a turbocharger that's powered by a high powered 16HP (48V 250A continous) high RPM (75,000) electric motor instead of using the exhaust gases.</li>
-          </ul>
-        </li>
-        <li>
-          <label for="faq2">
-            So where does an E-turbo get 48 volts from? Why not use 12 volts?
-          </label>
-          <input type="checkbox" id="faq2" />
-          <ul>
-            <li>We hear these questions a lot but there is a reason for why we're using this much power. In short, power has to come from somewhere. You simply can't connect a 12 volt battery to a motor with a compressor wheel and expect it to move/compress a significant amount of air. For this to work on a 12 volt system it would require an electric motor that pulls 1,000A so it can equal out to 12,000 Watts or 16HP. We need that 16HP to compress the air and spin a large 88mm compressor wheel at 75,000 RPM. The E-turbo is powered by a separate 48V lithium Ion cell or it can be powered by 4 lawn grade Lead Acid batteries.</li>
-          </ul>
-        </li>
-        <li>
-          <label for="faq3">
-            Wouldn't a 48V Lithium Ion battery be heavy?
-          </label>
-          <input type="checkbox" id="faq3" />
-          <ul>
-            <li>Depends... Do you think 15lbs is heavy for a 48V Lithium Ion Battery pack?</li>
-          </ul>
-        </li>
-        <li>
-          <label for="faq4">
-            How is this better than a conventional turbo or supercharger?
-          </label>
-          <input type="checkbox" id="faq4" />
-          <ul>
-            <li>The right answer for this is "It will make a different kind of power". Because the E-turbo is powered by an electric motor, it will naturally have near instant torque. With near instant torque we have an incredibly fast sub-second full speed acceleration. What does this mean? The electric turbo will hit full speed when activated and provide instant pressure and airflow. This instant burst of pressure and airflow can be triggered in the low RPM range where a conventional turbo would still be "spooling up".</li>
-          </ul>
-        </li>
-        <li>
-          <label for="faq5">
-            Can it produce more airflow/pressure than a conventional turbo?
-          </label>
-          <input type="checkbox" id="faq5" />
-          <ul>
-            <li>We would be lying if we said it could! Conventional exhaust driven turbos are powered by the engine where an electric supercharger is powered by batteries. An engine has a whole lot more power than batteries and thus an engine can create more power to spin a wheel faster and compress more air. The benefit with having an electric supercharger is that full power will always be available at 0 RPM where as a conventional turbo will hit full power at much higher RPMS.</li>
-          </ul>
-        </li>
-        <li>
-          <label for="faq6">
-            If it can't outflow a turbo then why do I want one?
-          </label>
-          <input type="checkbox" id="faq6" />
-          <ul>
-            <li>Having power available to you at 0 RPM has tremendous benefits. While an electric supercharger wont be able to outflow a conventional turbo, It will have a nice kick early on in the RPM range which will result in a lot of power in the low RPM band, Addition power in the Mid band and decent power in the High band. As we mentioned before, It's a different kind of power that is more similar to nitrous than it would be to a conventional Turbo.</li>
-          </ul>
-        </li>
-        <li>
-          <label for="faq7">
-            Nitrous? You mean this will not run all of the time?
-          </label>
-          <input type="checkbox" id="faq7" />
-          <ul>
-            <li>Correct! While you could tune up your E-Turbo so it can run all of the time, we don't suggest it. We are going at this from a Power-on-demand perspective instead of power-all-the-time. What this means is that you will have a throttle trigger point which will then activate the turbo. The trigger point and the power output of the turbo will be completely customizable by you!</li>
-          </ul>
-        </li>
-      </ul>
-      <h2>More to come!</h2>
-    </section>
-
-    <button class="cta-button" type="button">Get Involved</button>
-    <button class="cta-button" type="button">Our Kickstarter</button>
 
     <footer>
       <small>© Alcazar Innovation</small>

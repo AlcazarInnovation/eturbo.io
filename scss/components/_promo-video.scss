@@ -1,9 +1,14 @@
 .promo-video {
-  margin-top: -11px;
-  overflow-x: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
 
-  video {
-    height: 50vh;
-    transform: translateX(-25%);
-  }
+video {
+  height: 50vh;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
